@@ -1,13 +1,14 @@
 from classes.agent_class import Agent
 
+
 class Mission:
 
-    def __init__(self, mission_name : str, target_location : str):
+    def __init__(self, mission_name: str, target_location: str):
         self.mission_name = mission_name
         self.target_location = target_location
         self.assigned_agent = None
 
-    def assigned(self,agent : Agent):
+    def assign(self, agent: Agent):
         self.assigned_agent = agent
 
     def brief(self):

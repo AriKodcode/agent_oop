@@ -1,9 +1,9 @@
 class IntelTools:
 
-
-     @staticmethod
-     def encrypt_massage(msg : str):
-
+    @staticmethod
+    def encrypt_massage(msg: str):
+        return msg[::-1]
 
     @staticmethod
-    def
+    def log_transmission(agent_name: str, massage: str):
+        print(f"{agent_name} sent encrypted massage: {massage}")
